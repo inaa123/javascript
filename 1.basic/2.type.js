@@ -51,7 +51,7 @@ let id = Symbol('id')
 console.log(typeof id)
 
 val = 1 //val변수 데이터타입은 넘버!
-val = String(val)//넘버타입을 string타입으로 바꾸기
+val = String(val)//넘버타입을 string타입으로 바꾸기, 생성자임(new를 안썼을 뿐..3.4.하다가 갑자기 넘어옴..)
 console.log(typeof val)
 
 val = '6' / '2'

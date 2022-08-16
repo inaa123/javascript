@@ -8,8 +8,8 @@ let user2
 let _user
 let $user
 
-let userName
-let user_name
+let userName //camel
+let user_name //snake
 
 const x = 1 //상수 선언할땐 const,그리고 초기화까지 마무리해야함.
 //x = 2
