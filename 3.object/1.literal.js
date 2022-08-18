@@ -19,7 +19,7 @@ console.log(user.name.first)
 user.sing()
 //user.'nick name' error
 //user.nick name error
-console.log(user['nick name'])
+console.log(user['nick name']) //space문자가 포함된(' '안에) key를 쓰고싶으면 []?
 console.log(user['name']['first'])
 
 //값을바꿀수있으면 프라퍼티? property?
@@ -35,7 +35,7 @@ console.log(user[key])
 
 let man = {
     name: 'samuel',
-    1: 'one',
+    1: 'one', //숫자1이아닌 string 1임
     2: 'two'
 }
 

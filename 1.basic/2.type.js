@@ -10,15 +10,15 @@ console.log(1 / 0) //node 2.type.js 하면 infinity, 인피니티는 에러x 값
 console.log('a' / 1) //NaN(Not a Number) 에러메시지X, NaN이란 값임
 
 foo = 1
-console.log(isFinite(foo))
+console.log(isFinite(foo)) // isFinite : 매개변수가 유한한 숫자인지 확인. 
 foo = 'a'
 console.log(isFinite(foo))
 
 foo = '1'
 console.log((parseInt(foo)) + 1) //parseInt가 리턴한 값이 숫자인지 확인할 수 있는 익스프레스?함.
 
-foo = 'a'
-foo = '100px'
+foo = 'a' // NaN
+foo = '100px' // 100
 foo = '+1' //숫자가 아닌 문자
 foo = '-1'
 foo = '123456-789123' //하이픈을 구분자로 써써 앞으ㅣ 것만 인식.
