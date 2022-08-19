@@ -19,5 +19,5 @@ let Chef1 = new Chef('달콤한')
 let Chef2 = new Chef('매운')
 let waiter = new Waiter()
 
-waiter.order('짜장면', chef1)
-waiter.order('짜장면', chef2)
+waiter.order('짜장면', Chef1)
+waiter.order('짜장면', Chef2)
