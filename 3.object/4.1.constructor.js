@@ -1,7 +1,7 @@
 let makeUser = function(name, age) { //name,age는 파라미터
     return { //객체 리턴
         name: name, //앞의 name,age는 키, 뒤엔 value
-        age: age,
+        age: age
     }
 }//과거 버전
 
@@ -34,9 +34,9 @@ user2.greet() //생성자를 쓰는 이유....
 
 //
 let str = String(1) //생성자긴함(new를 안썼을 뿐..?)
-console.log(typeof str)
+console.log(typeof str)  // string 타입을 얻음
 
-str = new String(1) // string 타입을 얻음
+str = new String(1)
 console.log(typeof str) // object 타입을 얻음
 
 // 

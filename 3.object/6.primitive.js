@@ -44,3 +44,6 @@ console.log(user + 100)
 userStr = JSON.stringify(user)
 console.log(userStr) //jason에선 key를 " "로 써야함...? 자바스크립트에선안써도됐는데...
 console.log(typeof userStr)
+
+//serializing : 면발을 늘리듯, 데이터를 늘어뜨리는 것?
+//deserialinzing : 다시 객체로 복원하여 업무를 진행..? (유사어- 파싱)

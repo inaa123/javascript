@@ -41,7 +41,7 @@ let user = {
     name: 'user'
 }
 
-let administrator = {
+let administrator = { //administrator is a user를 표현! 
     __proto__: user
 }
 
@@ -82,7 +82,7 @@ for(let key in rabbit)
 //keys는 내 객체의..만 보여줌.. for(key)사용하면 상속까지 다 보여줌.
 
 for(let key in rabbit) {
-    let isOwn = rabbit.hasOwnProperty(key)
+    let isOwn = rabbit.hasOwnProperty(key) //key가 자식꺼면 true, 부모꺼면false
     if(isOwn) msg = `child's key: ${key}`
     else msg = `parent's key: ${key}`
 }

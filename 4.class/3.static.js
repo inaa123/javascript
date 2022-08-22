@@ -44,3 +44,30 @@ console.log(article1 + '')
 
 //
 console.log(article1.publiser, article1.address, article1.compare) //undefined undefined undefined => static변수는 객체안이 아니라 클래스 안에 있다.
+console.log(Article.title, Article.viewCnt)
+
+console.log(Object.keys(Article)) // ['publiser', 'address', 'getPrice']
+console.log(Article.prototype)
+//{constructor: f, toString: f, valueOf: f, Symbol(Symbol.toPrimitive): f}
+console.log(Object.keys(article1)) // ['title', 'viewCnt']
+
+//
+let articles = [article1, article2]
+console.log(articles)
+
+articles.sort(Article.compare) //a-b일때, 오름차순 정렬. 
+console.log(articles)
+
+Article.compare = (a, b) => b - a
+articles.sort(Article.compare) //내림차순, viewCnt큰게 먼저나옴
+console.log(articles) 
+
+//파라미터 펑션 : a - b면 오름차순, b - a면 내림차순?
+
+
+
+/*
+publisher
+address
+getPrice
+*/

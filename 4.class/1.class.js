@@ -12,6 +12,9 @@ let user = new User('john')
 console.log(user.name)
 user.introduce()
 
+//[[isClassConstructor]]: true
+//User('john') // TypeError: Class constructor User cannot be invoked without 'new'
+
 //
 User = class { 
     name
@@ -27,7 +30,10 @@ User = class {
     }
 }
 
-new User('abel', 12).introduce()
+user = new User('abel', 12)
+user.introduce() // abel / 12
+console.log(user.name) // abel
+console.log(User.prototype.name) // undefined
 
 //
 function makeClass(phrase) {
@@ -40,4 +46,3 @@ function makeClass(phrase) {
 
 User = makeClass('hello') 
 new User().sayHi()
-

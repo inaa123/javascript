@@ -18,7 +18,7 @@ let user = { //user객체만들기
 
 let userId = Symbol('userId')
 user.userId = 1 //userId라는 property 추가, (string 타입)
-user[userId] = 2 // (Symbol타입)
+user[userId] = 2 // (Symbol타입 property), 위와 다른 property
 
 console.log(user) //
 
@@ -30,14 +30,14 @@ console.log(Object.keys(user))
 //
 id1 = Symbol.for('id')
 id2 = Symbol.for('id')
-console.log(id1 == id2)
+console.log(id1 == id2) //true, 전역 심볼 레지스터리에서 공유된..?
 
 let key = Symbol.keyFor(id1)
-console.log(key, typeof key)
+console.log(key, typeof key) //string타입
 
 //
 id1 = Symbol.for('name') //global Symbol, for을 이용하면
-id2 = Symbol('name') //local Symbol , Symbol에 function이용하면 
-console.log(id1 == id2)
+id2 = Symbol('name') //local Symbol , Symbol에 function이용하면  
+console.log(id1 == id2) //false
 
-console.log(Symbol.keyFor(id1), Symbol.keyFor(id2))
+console.log(Symbol.keyFor(id1), Symbol.keyFor(id2)) //name, undefined(Symbol함수의 문자열 값은 description일 뿐, 정의되지X)
