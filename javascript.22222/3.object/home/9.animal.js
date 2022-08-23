@@ -1,27 +1,4 @@
-/* 과제:
-다음 상속 관계로 객체들을 디자인하세요.
-<life>
-name
-eat()
-excrete()
-
-<animal>  => life 상속
-name
-move()
-
-<bird>      <mammal>  => animal상속
-name        name
-move()      move()
---
-(출력되게)
-bird.eat.
-bird excrete.
-bird fly.
-mammal eat.
-mammal excrete.
-mammal run.
-*/
-
+//과제
 let life = {
     name: 'life',
     eat() {
@@ -40,8 +17,8 @@ let animal = {
 
 let bird = {
     name: 'bird',
-    move() { // override
-        console.log(this.name, 'fly.') 
+    move() {
+        console.log(this.name, 'fly.')
     },
     __proto__: animal
 }
@@ -49,7 +26,7 @@ let bird = {
 let mammal = {
     name: 'mammal',
     move() {
-        console.log(this.name, 'run')
+        console.log(this.name, 'run.')
     },
     __proto__: animal
 }

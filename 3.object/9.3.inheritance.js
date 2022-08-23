@@ -85,4 +85,5 @@ for(let key in rabbit) {
     let isOwn = rabbit.hasOwnProperty(key) //key가 자식꺼면 true, 부모꺼면false
     if(isOwn) msg = `child's key: ${key}`
     else msg = `parent's key: ${key}`
+    console.log(msg)
 }
