@@ -28,7 +28,7 @@ promise.then(result => console.log(result), //resolve든 reject든 끝나면 실
 new Promise((resolve, reject) => 
     setTimeout(() => resolve ('완성'), 2000))
     .then(console.log) //완성
-    .finally(() => console.log('promise가 생성되었습니다.'))
+    .finally(() => console.log('promise가 생성되었습니다.')) //finally handler는 프라미스가 성공,실패 관계없이 실행
 
 new Promise((resolve, reject) => 
     setTimeout(() => reject(new Error('미완성')), 3000))

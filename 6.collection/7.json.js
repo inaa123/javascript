@@ -24,7 +24,7 @@ user = {
     color: undefined
 }
 
-console.log(JSON.stringify(user)) //json에서 undefined, Symbol, ??(하나더..) 무시한다.
+console.log(JSON.stringify(user)) //json에서 serializing할때 undefined, Symbol, 메서드 무시한다.
 
 //
 let room = {
